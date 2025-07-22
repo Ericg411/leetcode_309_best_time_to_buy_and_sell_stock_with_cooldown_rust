@@ -27,11 +27,11 @@ mod tests {
     #[test]
     fn test_max_profit() {
         let test_cases = vec![
-            (vec![1, 2, 3, 0, 2], 3), // Buy on day 1, sell on day 2, cooldown, buy on day 4, sell on day 5
-            (vec![1], 0),              // Only one price, no transactions possible
-            (vec![2, 1], 0),           // Prices decrease, no profit
-            (vec![1, 2, 4, 2, 5, 3], 4), // Buy on day 1, sell on day 2, buy on day 3, sell on day 5
-            (vec![3, 2, 6, 5, 0, 3], 7), // Buy on day 1, sell on day 2, buy on day 4, sell on day 5
+            (vec![1, 2, 3, 0, 2], 3),
+            (vec![1], 0),             
+            (vec![2, 1], 0),           
+            (vec![1, 2, 4, 2, 5, 3], 4), 
+            (vec![3, 2, 6, 5, 0, 3], 7), 
         ];
 
         for (prices, expected) in test_cases {
